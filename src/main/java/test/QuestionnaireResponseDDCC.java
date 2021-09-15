@@ -20,7 +20,7 @@ public class QuestionnaireResponseDDCC {
 
 
 	QuestionnaireResponse questionnaireResponse = new QuestionnaireResponse();
-	questionnaireResponse.getMeta().addProfile(null);
+	questionnaireResponse.getMeta().addProfile("http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse");
 	questionnaireResponse.setStatus(QuestionnaireResponseStatus.COMPLETED);
 	questionnaireResponse.setQuestionnaire("http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire");
 	questionnaireResponse.setSubject(new Reference().setReference("Patient/Patient-01"));
